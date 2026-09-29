@@ -1,0 +1,13 @@
+class Solution {
+public:
+    vector<long long> sumOfThree(long long num) {
+    vector<long long>ans;
+    long long dif=num/3;
+    if(dif-1+dif+dif+1==num){
+        ans.push_back(dif-1);
+         ans.push_back(dif);
+          ans.push_back(dif+1);
+
+    }
+    return ans;}
+};
